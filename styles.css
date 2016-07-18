@@ -1,7 +1,42 @@
-img{
-    width: 200px;
+img {
+    width: 270px;
 }
-body{
+
+.img-circle {
+    border-radius: 50%;
+}
+
+body {
+    background-color: lightgreen;
     text-align: center;
-    font-family: arial;
+    font-family: "Arial";
+    color: black;
+    background: -webkit-linear-gradient(right top, lightgreen, yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+p {
+    font-size: 23px;
+}
+
+.image {
+    -webkit-animation:spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
