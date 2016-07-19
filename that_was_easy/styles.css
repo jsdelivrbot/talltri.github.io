@@ -19,3 +19,27 @@
 body{
     background-color:yellow;
 }
+#what{
+    width: 0;
+    height: 0;
+    background-color:yellow;
+    border-style: solid;
+    border-width: 0 150px 250px 150px;
+    border-color: transparent transparent green transparent;
+    text-align:center;
+    font-size:50px;
+    color:white;
+}
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+p{
+    margin-bottom:-260px;
+}

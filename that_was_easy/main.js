@@ -20,3 +20,14 @@ function key(event){
         $("kc").trigger("click");
     }
 }
+function sayIlluminati(){
+var Illuminati = new Audio("Illuminat_Confirmed_Sound_Effect.mp3");
+Illuminati.play();
+}
+$("#what").on("click", sayIlluminati);
+$(document).keypress(keys);
+function keys(event){ 
+    if(event.charCode == 34){
+        $("what").trigger("click");
+    }
+}
