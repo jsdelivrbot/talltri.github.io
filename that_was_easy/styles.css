@@ -43,3 +43,10 @@ body{
 p{
     margin-bottom:-260px;
 }
+.image{
+    -webkit-transition:-webkit-transform 2s ease-in-out;
+    transition:transform 2s ease-in-out;
+}
+.image:hover{
+    -webkit-transform:rotate(360deg);
+}
