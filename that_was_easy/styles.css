@@ -20,13 +20,11 @@ body{
     background-color:yellow;
 }
 #what{
-    width: 0;
-    height: 0;
-    background-color:yellow;
-    border-style: solid;
-    border-width: 0 150px 250px 150px;
-    border-color: transparent transparent green transparent;
-    text-align:center;
+    background:url("http://vignette4.wikia.nocookie.net/villains/images/7/78/Illuminati-Logo.png/revision/latest?cb=20150529234113") no-repeat;
+    cursor:pointer;
+    border:none;
+    width:800px;
+    height:700px;
     font-size:50px;
     color:white;
 }
@@ -41,7 +39,7 @@ body{
    justify-content: center;
 }
 p{
-    margin-bottom:-260px;
+    margin-bottom:0px;
 }
 .image{
     -webkit-transition:-webkit-transform 2s ease-in-out;

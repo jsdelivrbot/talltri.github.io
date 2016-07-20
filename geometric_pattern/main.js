@@ -1,4 +1,4 @@
-var NUM_CIRCLES = 40;
+var NUM_CIRCLES = 220;
 var circleDiameter;
 var circleRadius;
 var rVal;
@@ -7,11 +7,11 @@ var bVal;
 
 function setup(){
     createCanvas(1270,566);
-    frameRate(6);
+    frameRate(1);
     circleDiameter = width/NUM_CIRCLES;
-    circleRadius= circleDiameter/2;
+    circleRadius= circleDiameter/1;
     rVal = 255;
-    gVal = 0;
+    gVal = 50;
     bVal = 0;
 }
 function draw(){
@@ -34,8 +34,8 @@ function draw(){
         y = y - circleRadius;
         isShifted = !isShifted;
         rVal = (rVal + 254)%256;
-        gVal = (gVal + 7)%256;
-        bVal = (bVal + 3)%256;
+        gVal = (gVal + 10)%392;
+        bVal = (bVal + 3)%196;
     }
 }
 function keyPressed(){
