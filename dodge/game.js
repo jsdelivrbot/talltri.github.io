@@ -43,10 +43,10 @@ function draw() {
             player.position.x = player.position.x -= 7;
         }
         if (keyDown(UP_ARROW) && player.position.y > 0){
-            player.position.y = player.position.y -=7
+            player.position.y = player.position.y -=6;
         }
         if (keyDown(DOWN_ARROW) && player.position.y< height){
-            player.position.y = player.position.y +=7
+            player.position.y = player.position.y +=6;
         }
             
         if (enemy.position.y > height) {
@@ -70,7 +70,7 @@ function draw() {
         if (enemy3.overlap(player)){
             isGameOver = true
         }
-        enemy.position.y = enemy.position.y + 8;
+        enemy.position.y = enemy.position.y + 6.5;
         enemy2.position.x = enemy2.position.x + 8;
         enemy3.position.x = enemy3.position.x - 8;
         drawSprites();
