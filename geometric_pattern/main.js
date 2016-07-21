@@ -17,13 +17,13 @@ function setup(){
 function draw(){
     var isShifted = false;
     var y = height;
-    while(y >= 0){
+    while(y >= 5){
         
     var x;
     if (isShifted){
         x = circleRadius;
     }else{
-        x = 0;
+        x = 7;
     }
     while (x <= width){
         stroke(color(rVal,gVal,bVal));
@@ -35,7 +35,7 @@ function draw(){
         isShifted = !isShifted;
         rVal = (rVal + 254)%256;
         gVal = (gVal + 10)%392;
-        bVal = (bVal + 3)%196;
+        bVal = (bVal + 12)%196;
     }
 }
 function keyPressed(){
