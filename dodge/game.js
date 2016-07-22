@@ -18,7 +18,7 @@ function preload(){
 }
 
 function setup() {
-    createCanvas(750, 400);
+    createCanvas(901, 506);
     isGameOver = false;
     player = createSprite(width / 2, height - 25, 50, 50);
     player.addImage(playerImage);
@@ -26,7 +26,7 @@ function setup() {
     enemy.addImage(enemyImage);
     enemy2 = createSprite(0,height/2,10,30)
     enemy2.addImage(enemy2Image);
-    enemy3 = createSprite(400,height/2,10,30)
+    enemy3 = createSprite(506,height/2,10,30)
     enemy3.addImage(enemy3Image);
 }
 
