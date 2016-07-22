@@ -18,7 +18,7 @@ function preload(){
 }
 
 function setup() {
-    createCanvas(901, 506);
+    createCanvas(1101, 618);
     isGameOver = false;
     player = createSprite(width / 2, height - 25, 50, 50);
     player.addImage(playerImage);
@@ -26,7 +26,7 @@ function setup() {
     enemy.addImage(enemyImage);
     enemy2 = createSprite(0,height/2,10,30)
     enemy2.addImage(enemy2Image);
-    enemy3 = createSprite(506,height/2,10,30)
+    enemy3 = createSprite(618,height/2,10,30)
     enemy3.addImage(enemy3Image);
 }
 
@@ -80,7 +80,7 @@ function draw() {
 function gameOver() {
     background(0);
     textAlign(CENTER);
-    textSize(40)
+    textSize(50)
     fill("white");
     text("Game Over!", width / 2, height / 2);
     text("Click anywhere to try again", width / 2, 3 * height / 4)
