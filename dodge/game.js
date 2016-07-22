@@ -18,7 +18,7 @@ function preload(){
 }
 
 function setup() {
-    createCanvas(1101, 618);
+    createCanvas(950, 533);
     isGameOver = false;
     player = createSprite(width / 2, height - 25, 50, 50);
     player.addImage(playerImage);
