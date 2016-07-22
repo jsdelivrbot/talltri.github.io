@@ -9,6 +9,7 @@ var isGameOver;
 
 function preload(){
     player1Image = loadImage("Primal_Panda.png")
+    player2Image = loadImage("pancham___gen_vi_pokemon_sprite_by_spalding004-d64vsve.png")
 }
 function setup() {
     createCanvas(800, 520);
@@ -16,6 +17,7 @@ function setup() {
     player1 = createSprite(0, height / 2, 40, 40);
     player1.addImage(player1Image);
     player2 = createSprite(800, height / 2, 40, 40);
+    player2.addImage(player2Image);
     projectile1 = createSprite(0, height / 2, 26, 18);
     projectile2 = createSprite(800, height / 2, 26, 18);
 
