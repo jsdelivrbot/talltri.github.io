@@ -29,28 +29,28 @@ function draw() {
     }
     else {
         background(0, 0, 100);
-        if (keyDown(RIGHT_ARROW) && player1.position.x < width) {
+        if (keyDown(68) && player1.position.x < width) {
             player1.position.x = player1.position.x += 4;
         }
-        if (keyDown(LEFT_ARROW) && player1.position.x > 0) {
+        if (keyDown(65) && player1.position.x > 0) {
             player1.position.x = player1.position.x -= 4;
         }
-        if (keyDown(UP_ARROW) && player1.position.y > 0) {
+        if (keyDown(87) && player1.position.y > 0) {
             player1.position.y = player1.position.y -= 4;
         }
-        if (keyDown(DOWN_ARROW) && player1.position.y < height) {
+        if (keyDown(83) && player1.position.y < height) {
             player1.position.y = player1.position.y += 4;
         }
-        if (keyDown(87) && player2.position.y > 0) {
+        if (keyDown(UP_ARROW) && player2.position.y > 0) {
             player2.position.y = player2.position.y -= 4;
         }
-        if (keyDown(83) && player2.position.y < height) {
+        if (keyDown(DOWN_ARROW) && player2.position.y < height) {
             player2.position.y = player2.position.y += 4;
         }
-        if (keyDown(68) && player2.position.x < width) {
+        if (keyDown(RIGHT_ARROW) && player2.position.x < width) {
             player2.position.x = player2.position.x += 4;
         }
-        if (keyDown(65) && player2.position.x > 0) {
+        if (keyDown(LEFT_ARROW) && player2.position.x > 0) {
             player2.position.x = player2.position.x -= 4;
         }
        
