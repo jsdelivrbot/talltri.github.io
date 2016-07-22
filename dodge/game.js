@@ -70,9 +70,9 @@ function draw() {
         if (enemy3.overlap(player)){
             isGameOver = true
         }
-        enemy.position.y = enemy.position.y + 7;
-        enemy2.position.x = enemy2.position.x + 8.6;
-        enemy3.position.x = enemy3.position.x - 8.4;
+        enemy.position.y = enemy.position.y + 8;
+        enemy2.position.x = enemy2.position.x + 9.5;
+        enemy3.position.x = enemy3.position.x - 9.4;
         drawSprites();
     }
 }
