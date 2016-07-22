@@ -47,18 +47,17 @@ function draw() {
         if (keyDown(65) && player2.position.x > 0) {
             player2.position.x = player2.position.x -= 4;
         }
-        if (keyDown(191) && projectile1.position.x < 0) {
+       
         if (projectile1.position.x > width) {
             projectile1.position.x = player1.position.x;
             projectile1.position.y = player1.position.y;
-        } 
+    
         }
-        if (keyDown(69) && projectile2.position.x > 0){
         if (projectile2.position.x < 0) {
             projectile2.position.x = player2.position.x;
             projectile2.position.y = player2.position.y;
         }
-        }
+        
         if (projectile1.overlap(player2)){
             isGameOver = true;
         }
