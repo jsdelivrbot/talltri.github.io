@@ -80,7 +80,7 @@ function draw() {
 function gameOver() {
     background(0);
     textAlign(CENTER);
-    textSize(30)
+    textSize(40)
     fill("white");
     text("Game Over!", width / 2, height / 2);
     text("Click anywhere to try again", width / 2, 3 * height / 4)
