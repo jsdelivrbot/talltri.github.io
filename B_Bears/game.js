@@ -7,13 +7,17 @@ var projectile2;
 var backgroundImage;
 var isGameOver;
 
+function preload(){
+    player1Image = loadImage("Primal_Panda.png")
+}
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(800, 520);
     isGameOver = false;
     player1 = createSprite(0, height / 2, 40, 40);
-    player2 = createSprite(500, height / 2, 40, 40);
+    player1.addImage(player1Image);
+    player2 = createSprite(800, height / 2, 40, 40);
     projectile1 = createSprite(0, height / 2, 26, 18);
-    projectile2 = createSprite(500, height / 2, 26, 18);
+    projectile2 = createSprite(800, height / 2, 26, 18);
 
 }
 
