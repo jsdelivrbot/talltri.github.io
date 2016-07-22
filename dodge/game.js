@@ -48,7 +48,6 @@ function draw() {
         if (keyDown(DOWN_ARROW) && player.position.y< height){
             player.position.y = player.position.y +=6;
         }
-            
         if (enemy.position.y > height) {
             enemy.position.y = 0;
             enemy.position.x = random(30, width - 5);
