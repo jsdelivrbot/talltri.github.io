@@ -2,8 +2,8 @@ var groundSprites;
 var GROUND_SPRITE_HEIGHT = 50;
 var GROUND_SPRITE_WIDTH = 50;
 var numGroundSprites;
-var GRAVITY = 0.42;
-var JUMP = -5;
+var GRAVITY = 0.5;
+var JUMP = -6.3;
 var player;
 var playerImage;
 var obstacleSprites;
@@ -66,7 +66,7 @@ function draw() {
         score = score+1;
         textAlign(CENTER);
         text(score,camera.position.x,10)
-        player.position.x = player.position.x + 5;
+        player.position.x = player.position.x + 6.3;
         camera.position.x = player.position.x + (width / 4);
         var firstGroundSprite = groundSprites[0];
         if (firstGroundSprite.position.x <= camera.position.x - (width / 2 + firstGroundSprite.width / 2)) {
