@@ -37,11 +37,15 @@ function draw() {
             player.velocity.y = JUMP
         }
         if (keyDown(LEFT_ARROW)) {
-            player.position.x = player.position.x - 6
+            player.position.x = player.position.x - 6;
         }
         if (keyDown(RIGHT_ARROW)) {
-            player.position.x = player.position.x + 6
+            player.position.x = player.position.x + 6;
         }
-        
+        if (keyDown(DOWN_ARROW)){
+            explosion.position.x = player.position.x;
+            explosion.position.y = player.position.y;
+        }
         drawSprites();
     }
+    
