@@ -100,9 +100,9 @@ function mouseClicked() {
 
 function explosions() {
     for (var o = 0; o < 6;o++) {
-        explosionSprite = createSprite(player.position.x, player.position.y, 23, 23);
+        explosionSprite = createSprite(player.position.x, player.position.y, 34, 34);
         explosionSprites.add(explosionSprite);
         console.log(o);
-    explosionSprite.addSpeed(2.4,60*o);
+    explosionSprite.addSpeed(3,60*o);
     }
 }
