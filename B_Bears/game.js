@@ -6,10 +6,15 @@ var projectile1;
 var projectile2;
 var backgroundImage;
 var isGameOver;
-
+var gun;
+var gunImage;
+var gun2;
+var gun2Image;
 function preload(){
     player1Image = loadImage("Primal_Panda.png")
     player2Image = loadImage("pancham___gen_vi_pokemon_sprite_by_spalding004-d64vsve.png")
+    gunImage = loadImage("gun.png")
+    gun2Image = loadImage("gun2.png")
 }
 function setup() {
     createCanvas(800, 520);
@@ -20,7 +25,10 @@ function setup() {
     player2.addImage(player2Image);
     projectile1 = createSprite(0, height / 2, 26, 18);
     projectile2 = createSprite(800, height / 2, 26, 18);
-
+    gun = createSprite(0,height/2,30,30);
+    gun.addImage(gunImage)
+    gun2 = createSprite(0,height/2,30,30);
+    gun2.addImage(gun2Image)
 }
 
 function draw() {
@@ -72,6 +80,10 @@ function draw() {
         }
         projectile1.position.x = projectile1.position.x + 10
         projectile2.position.x = projectile2.position.x - 10;
+        gun.position.x = player1.position.x +23;
+        gun.position.y = player1.position.y;
+        gun2.position.x = player2.position.x - 25;
+        gun2.position.y = player2.position.y + 9;
 
         drawSprites();
     }
