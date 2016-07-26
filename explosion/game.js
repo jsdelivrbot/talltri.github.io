@@ -103,6 +103,6 @@ function explosions() {
         explosionSprite = createSprite(player.position.x, player.position.y, 34, 34);
         explosionSprites.add(explosionSprite);
         console.log(o);
-    explosionSprite.addSpeed(3,60*o);
+    explosionSprite.addSpeed(5,60*o);
     }
 }
