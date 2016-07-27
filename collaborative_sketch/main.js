@@ -30,8 +30,8 @@ function draw() {
     background(255);
     for (var i = 0; i < points.length; i++) {
         var point = points[i];
-        fill(240,29,300);
-        ellipse(point.x, point.y, 15, 15);
+        fill(240,0,0);
+        triangle(point.x, point.y,point.y,36,51,20);
     }
 }
 
