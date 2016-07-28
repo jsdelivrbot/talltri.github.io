@@ -1,6 +1,7 @@
 var choice;
 var botchoice;
 var maples;
+var mapleim;
 var guns;
 var bears;
 var a;
@@ -10,6 +11,10 @@ var d;
 var gg;
 var score;
 var botscore;
+
+function preload(){
+    mapleim = loadImage("maple.png");
+}
 
 function setup() {
     a = false;
@@ -33,6 +38,7 @@ function draw() {
         if (choice == 1 && c == false && b == false) {
             console.log("test");
             maples = createSprite(width / 2, 100, 70, 70);
+            maples.addImage(mapleim);
             c = true;
         }
         if (choice == 2 && c == false && b == false) {
