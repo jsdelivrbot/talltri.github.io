@@ -29,9 +29,10 @@ function draw() {
     }
     else {
         background(200);
-        text("Your Score:" + score + "         " + "Bot score:" + botscore,width/2,30);
+        text("Your Score:" + score + "         " + "Bot score:" + botscore, width / 2, 30);
         if (choice == 1 && c == false && b == false) {
-            maples = createSprite(width / 2, 200, 70, 70);
+            console.log("test");
+            maples = createSprite(width / 2, 100, 70, 70);
             c = true;
         }
         if (choice == 2 && c == false && b == false) {
@@ -63,7 +64,6 @@ $("#maple").on("click", mapleleaf);
 
 function mapleleaf() {
     choice = 1;
-    c = true;
 }
 $("#gun").on("click", shoot);
 
@@ -148,11 +148,12 @@ function GameOver() {
         text("DON'T PLAY THIS GAME.", width / 2, height / 3)
     }
 }
-function mouseClicked(){
-    if (gg){
-    gg = false;
-    score = 0;
-    botscore = 0;
-}
+
+function mouseClicked() {
+    if (gg) {
+        gg = false;
+        score = 0;
+        botscore = 0;
+    }
 
 }
