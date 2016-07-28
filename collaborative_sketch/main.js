@@ -31,7 +31,7 @@ function draw() {
     for (var i = 0; i < points.length; i++) {
         var point = points[i];
         fill(240,0,0);
-        triangle(point.x, point.y,point.y,36,51,20);
+        line(point.x, point.y,point.y,51,20,36);
     }
 }
 
