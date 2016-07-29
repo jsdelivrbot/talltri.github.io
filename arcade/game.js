@@ -1,4 +1,5 @@
 var frog;
+var frogi;
 var log;
 var logs;
 var logss;
@@ -8,12 +9,21 @@ var logs3;
 var log4;
 var logs4;
 var hop;
+var beginning;
+var road;
+var car;
+var car1;
+var car2;
 
+function preload(){
+    frogi = loadImage("pepe.png");
+}
 
 function setup(){
     createCanvas(400,400);
     background(20,30,220);
-    
+    beginning = createSprite(width/2,380,400,40);
+    road = createSprite(width/2,110,400,200);
     log = createSprite(360,340,50,20);
     logs = createSprite(500,340,40,20);
     logss = createSprite(600,340,40,20);
@@ -25,11 +35,17 @@ function setup(){
     log4 = createSprite(360,235,60,20);
     logs4 = createSprite(545,235,60,20);
     frog = createSprite(width/2,375,19,19);
+    frog.addImage(frogi);
+    car = createSprite(360, 165,40,20);
+    
 }
 function draw(){
     background(20,30,220);
     
-    
+    if (car.position.x < 0){
+        car.position.y = 165;
+        car.position.x = width;
+    }
     if (log.position.x < 0){
         log.position.y = 340;
         log.position.x = width;
@@ -78,6 +94,14 @@ function draw(){
         frog.position.y = 305;
         frog.position.x = frog.position.x - 1.4;
     }
+    if (log3.overlap(frog) ||logs3.overlap(frog) ||logss3.overlap(frog)){
+        frog.position.y = 270;
+        frog.position.x = frog.position.x + 1.6;
+    }
+    if (log4.overlap(frog) ||logs4.overlap(frog)){
+        frog.position.y = 235;
+        frog.position.x = frog.position.x - 1;
+    }
     log.position.x = log.position.x - 1;
     logs.position.x = logs.position.x - 1;
     logss.position.x = logss.position.x - 1;
@@ -88,6 +112,7 @@ function draw(){
     logss3.position.x = logss3.position.x + 1.6;
     log4.position.x = log4.position.x - 1;
     logs4.position.x = logs4.position.x - 1;
+    car.position.x = car.position.x - 5;
     drawSprites();
 }
 function keyPressed(){
