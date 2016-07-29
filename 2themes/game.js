@@ -1,5 +1,6 @@
 var choice;
 var botchoice;
+var botmaple;
 var maples;
 var mapleim;
 var guns;
@@ -36,7 +37,6 @@ function draw() {
         background(200);
         text("Your Score:" + score + "         " + "Bot score:" + botscore, width / 2, 30);
         if (choice == 1 && c == false && b == false) {
-            console.log("test");
             maples = createSprite(width / 2, 100, 70, 70);
             maples.addImage(mapleim);
             c = true;
@@ -53,6 +53,9 @@ function draw() {
             enemy();
             b = true;
         }
+        if (botchoice == 1 && b == false) {
+            botmaple = createSprite(width / 2, 300, 70, 70);
+            botmaple.addImage(mapleim);
         // if (a == false) {
         scoreUpdate();
         // }
