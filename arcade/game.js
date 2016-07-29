@@ -102,6 +102,9 @@ function draw(){
         frog.position.y = 235;
         frog.position.x = frog.position.x - 1;
     }
+    if (car.overlap(frog)){
+        frog.position.y = beginning.position.y;
+    }
     log.position.x = log.position.x - 1;
     logs.position.x = logs.position.x - 1;
     logss.position.x = logss.position.x - 1;
